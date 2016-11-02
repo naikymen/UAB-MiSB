@@ -1,0 +1,6 @@
+# Info sobre funciones
+
+# https://www.gnu.org/software/octave/doc/v4.0.1/Functions-and-Scripts.html
+# https://www.gnu.org/software/octave/doc/v4.0.3/Defining-Functions.html
+# https://www.gnu.org/software/octave/doc/v4.0.1/Function-Handles-Anonymous-Functions-Inline-Functions.html#Function-Handles-Anonymous-Functions-Inline-Functions
+# https://www.gnu.org/software/octave/doc/v4.0.1/Basic-Matrix-Functions.html
