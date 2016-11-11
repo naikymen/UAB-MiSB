@@ -1,0 +1,94 @@
+An equilibrium steady state (zero fluxes) was found.
+
+Species	Concentration (mmol/l)	Concentration Rate (mmol/(l*s))	Particle Number	Particle Number Rate (1/s)	Transition Time (s)
+S	2	0	1.20443e+21	0	inf
+X1	2	0	1.20443e+21	0	inf
+X2	2	0	1.20443e+21	0	inf
+X3	2	0	1.20443e+21	0	inf
+X4	2	0	1.20443e+21	0	inf
+X5	2	0	1.20443e+21	0	inf
+X6	2	-1.64477e-15	1.20443e+21	-990507	inf
+P1	2	0	1.20443e+21	0	inf
+P2	2	1.64477e-15	1.20443e+21	990507	inf
+
+Reaction	Flux (mmol/s)	Particle Flux (1/s)
+R1	0	0
+R2	0	0
+R3	0	0
+R4	0	0
+R5	0	0
+R6	0	0
+R7	0	0
+R8	1.64477e-15	990507
+
+Jacobian (complete system)
+
+Rows:    Variables of the system, including dependent species
+Columns: Variables of the system, including dependent species
+	S	X1	X2	X3	X4	X5	X6	P1	P2
+S	-5.55556	-0	-0	1.85185	1.85185	1.85185	-0	-0	-0
+X1	-0	-3.7037	-0	-0	1.85185	-0	-0	1.85185	-0
+X2	-0	-0	-3.7037	-0	-0	1.85185	-0	-0	1.85185
+X3	1.85185	-0	-0	-3.7037	-0	-0	1.85185	-0	-0
+X4	1.85185	1.85185	-0	-0	-3.7037	-0	-0	-0	-0
+X5	1.85185	-0	1.85185	-0	-0	-3.7037	-0	-0	-0
+X6	-0	-0	-0	1.85185	-0	-0	-1.85185	-0	-0
+P1	-0	1.85185	-0	-0	-0	-0	-0	-1.85185	-0
+P2	-0	-0	1.85185	-0	-0	-0	-0	-0	-1.85185
+
+Eigenvalues	real	imaginary
+	0	0
+	-0.366782	0
+	-0.556244	0
+	-1.85185	0
+	-2.87955	0
+	-4.14652	0
+	-5.55556	0
+	-6.01293	0
+	-8.26019	0
+
+Jacobian (reduced system)
+
+Rows:    Independent variables of the system
+Columns: Independent variables of the system
+	X2	X4	X6	X1	X3	X5	S	P1
+X2	-5.55556	-0	-0	1.85185	1.85185	1.85185	-0	-0
+X4	-0	-3.7037	-0	-0	1.85185	-0	-0	1.85185
+X6	-1.85185	-1.85185	-5.55555	-1.85185	-1.85185	6.16791e-07	-1.85185	-1.85185
+X1	1.85185	-0	-0	-3.7037	-0	-0	1.85185	-0
+X3	1.85185	1.85185	-0	-0	-3.7037	-0	-0	-0
+X5	1.85185	-0	1.85185	-0	-0	-3.7037	-0	-0
+S	-0	-0	-0	1.85185	-0	-0	-1.85185	-0
+P1	-0	1.85185	-0	-0	-0	-0	-0	-1.85185
+
+Eigenvalues	real	imaginary
+	-0.366782	0
+	-0.556244	0
+	-1.85185	0
+	-2.87955	0
+	-4.14652	0
+	-5.55556	0
+	-6.01293	0
+	-8.26019	0
+
+Stability Analysis of the Reduced System
+
+KINETIC STABILITY ANALYSIS
+The linear stability analysis based on the eigenvalues
+of the Jacobian matrix is only valid for steady states.
+
+Summary:
+This state is asymptotically stable.
+
+Eigenvalue statistics:
+ Largest real part: -0.366782
+ Largest absolute imaginary part:  0
+ 8 are purely real
+ 0 are purely imaginary
+ 0 are complex
+ 0 are equal to zero
+ 0 have positive real part
+ 8 have negative real part
+ stiffness = 22.5207
+ time hierarchy = 0.366277
+
