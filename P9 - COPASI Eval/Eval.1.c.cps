@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- generated with COPASI 4.16 (Build 104) (http://www.copasi.org) at 2016-11-25 14:57:27 UTC -->
+<!-- generated with COPASI 4.16 (Build 104) (http://www.copasi.org) at 2016-11-25 15:11:08 UTC -->
 <?oxygen RNGSchema="http://www.copasi.org/static/schema/CopasiML.rng" type="xml"?>
 <COPASI xmlns="http://www.copasi.org/static/schema" versionMajor="4" versionMinor="16" versionDevel="104" copasiSourcesModified="0">
   <ListOfFunctions>
@@ -17,12 +17,12 @@
       </ListOfParameterDescriptions>
     </Function>
   </ListOfFunctions>
-  <Model key="Model_26" name="P9 Evaluable" simulationType="time" timeUnit="s" volumeUnit="l" areaUnit="m²" lengthUnit="m" quantityUnit="mmol" type="deterministic" avogadroConstant="6.02214179e+23">
+  <Model key="Model_36" name="P9 Evaluable" simulationType="time" timeUnit="s" volumeUnit="l" areaUnit="m²" lengthUnit="m" quantityUnit="mmol" type="deterministic" avogadroConstant="6.02214179e+23">
     <MiriamAnnotation>
 <rdf:RDF
    xmlns:dcterms="http://purl.org/dc/terms/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Model_26">
+  <rdf:Description rdf:about="#Model_36">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2016-11-25T15:03:14Z</dcterms:W3CDTF>
@@ -39,19 +39,18 @@ CoPaSi i què ho confirma per un biotecnòleg?. Quina relació hi ha entre la di
 flux i la ΔG?.
 
 El modelo también llega a un estado estacionario asintóticamente estable, pero no es estacionario.
-
-dG6(10)	-6.54226
-fluxR6(10)	0.298543
+Le hemos agregado entradas y salidas fijas, lo que significa que el organismo mantiene estables esas concentraciones y en desequilibrio al modelo.
+El flujo ocurre en la dirección que el delta G es negativo (espontáneo)
     </Comment>
     <ListOfCompartments>
-      <Compartment key="Compartment_24" name="compartment" simulationType="fixed" dimensionality="3">
+      <Compartment key="Compartment_34" name="compartment" simulationType="fixed" dimensionality="3">
       </Compartment>
     </ListOfCompartments>
     <ListOfMetabolites>
-      <Metabolite key="Metabolite_190" name="A" simulationType="reactions" compartment="Compartment_24">
+      <Metabolite key="Metabolite_260" name="A" simulationType="reactions" compartment="Compartment_34">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Metabolite_190">
+  <rdf:Description rdf:about="#Metabolite_260">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2016-11-25T15:05:42Z</dcterms:W3CDTF>
@@ -61,10 +60,10 @@ fluxR6(10)	0.298543
 </rdf:RDF>
         </MiriamAnnotation>
       </Metabolite>
-      <Metabolite key="Metabolite_186" name="Aex" simulationType="fixed" compartment="Compartment_24">
+      <Metabolite key="Metabolite_256" name="Aex" simulationType="fixed" compartment="Compartment_34">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Metabolite_186">
+  <rdf:Description rdf:about="#Metabolite_256">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2016-11-25T15:05:43Z</dcterms:W3CDTF>
@@ -74,10 +73,10 @@ fluxR6(10)	0.298543
 </rdf:RDF>
         </MiriamAnnotation>
       </Metabolite>
-      <Metabolite key="Metabolite_172" name="B" simulationType="reactions" compartment="Compartment_24">
+      <Metabolite key="Metabolite_242" name="B" simulationType="reactions" compartment="Compartment_34">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Metabolite_172">
+  <rdf:Description rdf:about="#Metabolite_242">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2016-11-25T15:10:57Z</dcterms:W3CDTF>
@@ -87,10 +86,10 @@ fluxR6(10)	0.298543
 </rdf:RDF>
         </MiriamAnnotation>
       </Metabolite>
-      <Metabolite key="Metabolite_200" name="Bext" simulationType="fixed" compartment="Compartment_24">
+      <Metabolite key="Metabolite_270" name="Bext" simulationType="fixed" compartment="Compartment_34">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Metabolite_200">
+  <rdf:Description rdf:about="#Metabolite_270">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2016-11-25T15:10:58Z</dcterms:W3CDTF>
@@ -100,10 +99,10 @@ fluxR6(10)	0.298543
 </rdf:RDF>
         </MiriamAnnotation>
       </Metabolite>
-      <Metabolite key="Metabolite_202" name="C" simulationType="reactions" compartment="Compartment_24">
+      <Metabolite key="Metabolite_272" name="C" simulationType="reactions" compartment="Compartment_34">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Metabolite_202">
+  <rdf:Description rdf:about="#Metabolite_272">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2016-11-25T15:10:59Z</dcterms:W3CDTF>
@@ -113,10 +112,10 @@ fluxR6(10)	0.298543
 </rdf:RDF>
         </MiriamAnnotation>
       </Metabolite>
-      <Metabolite key="Metabolite_204" name="D" simulationType="reactions" compartment="Compartment_24">
+      <Metabolite key="Metabolite_274" name="D" simulationType="reactions" compartment="Compartment_34">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Metabolite_204">
+  <rdf:Description rdf:about="#Metabolite_274">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2016-11-25T15:10:58Z</dcterms:W3CDTF>
@@ -126,10 +125,10 @@ fluxR6(10)	0.298543
 </rdf:RDF>
         </MiriamAnnotation>
       </Metabolite>
-      <Metabolite key="Metabolite_206" name="Dext" simulationType="fixed" compartment="Compartment_24">
+      <Metabolite key="Metabolite_276" name="Dext" simulationType="fixed" compartment="Compartment_34">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Metabolite_206">
+  <rdf:Description rdf:about="#Metabolite_276">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2016-11-25T15:11:00Z</dcterms:W3CDTF>
@@ -141,10 +140,10 @@ fluxR6(10)	0.298543
       </Metabolite>
     </ListOfMetabolites>
     <ListOfModelValues>
-      <ModelValue key="ModelValue_14" name="kmsp" simulationType="fixed">
+      <ModelValue key="ModelValue_29" name="kmsp" simulationType="fixed">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#ModelValue_14">
+  <rdf:Description rdf:about="#ModelValue_29">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2016-11-25T15:04:04Z</dcterms:W3CDTF>
@@ -154,10 +153,10 @@ fluxR6(10)	0.298543
 </rdf:RDF>
         </MiriamAnnotation>
       </ModelValue>
-      <ModelValue key="ModelValue_15" name="vf" simulationType="fixed">
+      <ModelValue key="ModelValue_28" name="vf" simulationType="fixed">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#ModelValue_15">
+  <rdf:Description rdf:about="#ModelValue_28">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2016-11-25T15:04:16Z</dcterms:W3CDTF>
@@ -167,10 +166,10 @@ fluxR6(10)	0.298543
 </rdf:RDF>
         </MiriamAnnotation>
       </ModelValue>
-      <ModelValue key="ModelValue_16" name="Keq1" simulationType="fixed">
+      <ModelValue key="ModelValue_0" name="Keq1" simulationType="fixed">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#ModelValue_16">
+  <rdf:Description rdf:about="#ModelValue_0">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2016-11-25T15:04:21Z</dcterms:W3CDTF>
@@ -180,10 +179,10 @@ fluxR6(10)	0.298543
 </rdf:RDF>
         </MiriamAnnotation>
       </ModelValue>
-      <ModelValue key="ModelValue_17" name="Keq2" simulationType="fixed">
+      <ModelValue key="ModelValue_1" name="Keq2" simulationType="fixed">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#ModelValue_17">
+  <rdf:Description rdf:about="#ModelValue_1">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2016-11-25T15:04:21Z</dcterms:W3CDTF>
@@ -193,10 +192,10 @@ fluxR6(10)	0.298543
 </rdf:RDF>
         </MiriamAnnotation>
       </ModelValue>
-      <ModelValue key="ModelValue_18" name="Keq3" simulationType="fixed">
+      <ModelValue key="ModelValue_2" name="Keq3" simulationType="fixed">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#ModelValue_18">
+  <rdf:Description rdf:about="#ModelValue_2">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2016-11-25T15:04:21Z</dcterms:W3CDTF>
@@ -206,10 +205,10 @@ fluxR6(10)	0.298543
 </rdf:RDF>
         </MiriamAnnotation>
       </ModelValue>
-      <ModelValue key="ModelValue_19" name="Keq4" simulationType="fixed">
+      <ModelValue key="ModelValue_3" name="Keq4" simulationType="fixed">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#ModelValue_19">
+  <rdf:Description rdf:about="#ModelValue_3">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2016-11-25T15:04:21Z</dcterms:W3CDTF>
@@ -219,10 +218,10 @@ fluxR6(10)	0.298543
 </rdf:RDF>
         </MiriamAnnotation>
       </ModelValue>
-      <ModelValue key="ModelValue_20" name="Keq5" simulationType="fixed">
+      <ModelValue key="ModelValue_4" name="Keq5" simulationType="fixed">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#ModelValue_20">
+  <rdf:Description rdf:about="#ModelValue_4">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2016-11-25T15:04:21Z</dcterms:W3CDTF>
@@ -232,10 +231,10 @@ fluxR6(10)	0.298543
 </rdf:RDF>
         </MiriamAnnotation>
       </ModelValue>
-      <ModelValue key="ModelValue_21" name="Keq6" simulationType="fixed">
+      <ModelValue key="ModelValue_5" name="Keq6" simulationType="fixed">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#ModelValue_21">
+  <rdf:Description rdf:about="#ModelValue_5">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2016-11-25T15:05:23Z</dcterms:W3CDTF>
@@ -245,10 +244,10 @@ fluxR6(10)	0.298543
 </rdf:RDF>
         </MiriamAnnotation>
       </ModelValue>
-      <ModelValue key="ModelValue_22" name="Keq7" simulationType="fixed">
+      <ModelValue key="ModelValue_6" name="Keq7" simulationType="fixed">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#ModelValue_22">
+  <rdf:Description rdf:about="#ModelValue_6">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2016-11-25T15:05:23Z</dcterms:W3CDTF>
@@ -258,10 +257,10 @@ fluxR6(10)	0.298543
 </rdf:RDF>
         </MiriamAnnotation>
       </ModelValue>
-      <ModelValue key="ModelValue_23" name="MAR1" simulationType="assignment">
+      <ModelValue key="ModelValue_7" name="MAR1" simulationType="assignment">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#ModelValue_23">
+  <rdf:Description rdf:about="#ModelValue_7">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2016-11-25T15:13:40Z</dcterms:W3CDTF>
@@ -274,10 +273,10 @@ fluxR6(10)	0.298543
           &lt;CN=Root,Model=P9 Evaluable,Vector=Compartments[compartment],Vector=Metabolites[A],Reference=Concentration&gt;/&lt;CN=Root,Model=P9 Evaluable,Vector=Compartments[compartment],Vector=Metabolites[Aex],Reference=Concentration&gt;
         </Expression>
       </ModelValue>
-      <ModelValue key="ModelValue_24" name="MAR2" simulationType="assignment">
+      <ModelValue key="ModelValue_8" name="MAR2" simulationType="assignment">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#ModelValue_24">
+  <rdf:Description rdf:about="#ModelValue_8">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2016-11-25T15:13:40Z</dcterms:W3CDTF>
@@ -290,10 +289,10 @@ fluxR6(10)	0.298543
           &lt;CN=Root,Model=P9 Evaluable,Vector=Compartments[compartment],Vector=Metabolites[B],Reference=Concentration&gt;/&lt;CN=Root,Model=P9 Evaluable,Vector=Compartments[compartment],Vector=Metabolites[A],Reference=Concentration&gt;
         </Expression>
       </ModelValue>
-      <ModelValue key="ModelValue_25" name="MAR6" simulationType="assignment">
+      <ModelValue key="ModelValue_9" name="MAR6" simulationType="assignment">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#ModelValue_25">
+  <rdf:Description rdf:about="#ModelValue_9">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2016-11-25T15:13:40Z</dcterms:W3CDTF>
@@ -306,10 +305,10 @@ fluxR6(10)	0.298543
           &lt;CN=Root,Model=P9 Evaluable,Vector=Compartments[compartment],Vector=Metabolites[Bext],Reference=Concentration&gt;/&lt;CN=Root,Model=P9 Evaluable,Vector=Compartments[compartment],Vector=Metabolites[B],Reference=Concentration&gt;
         </Expression>
       </ModelValue>
-      <ModelValue key="ModelValue_26" name="MAR3" simulationType="assignment">
+      <ModelValue key="ModelValue_10" name="MAR3" simulationType="assignment">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#ModelValue_26">
+  <rdf:Description rdf:about="#ModelValue_10">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2016-11-25T15:13:40Z</dcterms:W3CDTF>
@@ -322,10 +321,10 @@ fluxR6(10)	0.298543
           &lt;CN=Root,Model=P9 Evaluable,Vector=Compartments[compartment],Vector=Metabolites[C],Reference=Concentration&gt;/&lt;CN=Root,Model=P9 Evaluable,Vector=Compartments[compartment],Vector=Metabolites[A],Reference=Concentration&gt;
         </Expression>
       </ModelValue>
-      <ModelValue key="ModelValue_27" name="MAR4" simulationType="assignment">
+      <ModelValue key="ModelValue_11" name="MAR4" simulationType="assignment">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#ModelValue_27">
+  <rdf:Description rdf:about="#ModelValue_11">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2016-11-25T15:13:40Z</dcterms:W3CDTF>
@@ -338,23 +337,7 @@ fluxR6(10)	0.298543
           &lt;CN=Root,Model=P9 Evaluable,Vector=Compartments[compartment],Vector=Metabolites[D],Reference=Concentration&gt;/&lt;CN=Root,Model=P9 Evaluable,Vector=Compartments[compartment],Vector=Metabolites[C],Reference=Concentration&gt;
         </Expression>
       </ModelValue>
-      <ModelValue key="ModelValue_13" name="MAR5" simulationType="assignment">
-        <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#ModelValue_13">
-    <dcterms:created>
-      <rdf:Description>
-        <dcterms:W3CDTF>2016-11-25T15:13:40Z</dcterms:W3CDTF>
-      </rdf:Description>
-    </dcterms:created>
-  </rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
-        <Expression>
-          &lt;CN=Root,Model=P9 Evaluable,Vector=Compartments[compartment],Vector=Metabolites[D],Reference=Concentration&gt;/&lt;CN=Root,Model=P9 Evaluable,Vector=Compartments[compartment],Vector=Metabolites[B],Reference=Concentration&gt;
-        </Expression>
-      </ModelValue>
-      <ModelValue key="ModelValue_12" name="MAR7" simulationType="assignment">
+      <ModelValue key="ModelValue_12" name="MAR5" simulationType="assignment">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_12">
@@ -367,13 +350,29 @@ fluxR6(10)	0.298543
 </rdf:RDF>
         </MiriamAnnotation>
         <Expression>
+          &lt;CN=Root,Model=P9 Evaluable,Vector=Compartments[compartment],Vector=Metabolites[D],Reference=Concentration&gt;/&lt;CN=Root,Model=P9 Evaluable,Vector=Compartments[compartment],Vector=Metabolites[B],Reference=Concentration&gt;
+        </Expression>
+      </ModelValue>
+      <ModelValue key="ModelValue_13" name="MAR7" simulationType="assignment">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#ModelValue_13">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2016-11-25T15:13:40Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+        <Expression>
           &lt;CN=Root,Model=P9 Evaluable,Vector=Compartments[compartment],Vector=Metabolites[Dext],Reference=Concentration&gt;/&lt;CN=Root,Model=P9 Evaluable,Vector=Compartments[compartment],Vector=Metabolites[D],Reference=Concentration&gt;
         </Expression>
       </ModelValue>
-      <ModelValue key="ModelValue_11" name="Des1" simulationType="assignment">
+      <ModelValue key="ModelValue_27" name="Des1" simulationType="assignment">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#ModelValue_11">
+  <rdf:Description rdf:about="#ModelValue_27">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2016-11-25T15:18:30Z</dcterms:W3CDTF>
@@ -386,10 +385,10 @@ fluxR6(10)	0.298543
           &lt;CN=Root,Model=P9 Evaluable,Vector=Values[MAR1],Reference=Value&gt;/&lt;CN=Root,Model=P9 Evaluable,Vector=Values[Keq1],Reference=Value&gt;
         </Expression>
       </ModelValue>
-      <ModelValue key="ModelValue_10" name="Des2" simulationType="assignment">
+      <ModelValue key="ModelValue_26" name="Des2" simulationType="assignment">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#ModelValue_10">
+  <rdf:Description rdf:about="#ModelValue_26">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2016-11-25T15:18:30Z</dcterms:W3CDTF>
@@ -402,10 +401,10 @@ fluxR6(10)	0.298543
           &lt;CN=Root,Model=P9 Evaluable,Vector=Values[MAR2],Reference=Value&gt;/&lt;CN=Root,Model=P9 Evaluable,Vector=Values[Keq2],Reference=InitialValue&gt;
         </Expression>
       </ModelValue>
-      <ModelValue key="ModelValue_9" name="Des3" simulationType="assignment">
+      <ModelValue key="ModelValue_25" name="Des3" simulationType="assignment">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#ModelValue_9">
+  <rdf:Description rdf:about="#ModelValue_25">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2016-11-25T15:18:30Z</dcterms:W3CDTF>
@@ -418,10 +417,10 @@ fluxR6(10)	0.298543
           &lt;CN=Root,Model=P9 Evaluable,Vector=Values[MAR3],Reference=Value&gt;/&lt;CN=Root,Model=P9 Evaluable,Vector=Values[Keq3],Reference=Value&gt;
         </Expression>
       </ModelValue>
-      <ModelValue key="ModelValue_8" name="Des4" simulationType="assignment">
+      <ModelValue key="ModelValue_24" name="Des4" simulationType="assignment">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#ModelValue_8">
+  <rdf:Description rdf:about="#ModelValue_24">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2016-11-25T15:18:30Z</dcterms:W3CDTF>
@@ -434,10 +433,10 @@ fluxR6(10)	0.298543
           &lt;CN=Root,Model=P9 Evaluable,Vector=Values[MAR4],Reference=Value&gt;/&lt;CN=Root,Model=P9 Evaluable,Vector=Values[Keq4],Reference=Value&gt;
         </Expression>
       </ModelValue>
-      <ModelValue key="ModelValue_7" name="Des5" simulationType="assignment">
+      <ModelValue key="ModelValue_23" name="Des5" simulationType="assignment">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#ModelValue_7">
+  <rdf:Description rdf:about="#ModelValue_23">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2016-11-25T15:18:30Z</dcterms:W3CDTF>
@@ -450,10 +449,10 @@ fluxR6(10)	0.298543
           &lt;CN=Root,Model=P9 Evaluable,Vector=Values[MAR5],Reference=Value&gt;/&lt;CN=Root,Model=P9 Evaluable,Vector=Values[Keq5],Reference=Value&gt;
         </Expression>
       </ModelValue>
-      <ModelValue key="ModelValue_6" name="Des6" simulationType="assignment">
+      <ModelValue key="ModelValue_22" name="Des6" simulationType="assignment">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#ModelValue_6">
+  <rdf:Description rdf:about="#ModelValue_22">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2016-11-25T15:18:30Z</dcterms:W3CDTF>
@@ -466,10 +465,10 @@ fluxR6(10)	0.298543
           &lt;CN=Root,Model=P9 Evaluable,Vector=Values[MAR6],Reference=Value&gt;/&lt;CN=Root,Model=P9 Evaluable,Vector=Values[Keq6],Reference=Value&gt;
         </Expression>
       </ModelValue>
-      <ModelValue key="ModelValue_5" name="Des7" simulationType="assignment">
+      <ModelValue key="ModelValue_21" name="Des7" simulationType="assignment">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#ModelValue_5">
+  <rdf:Description rdf:about="#ModelValue_21">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2016-11-25T15:18:30Z</dcterms:W3CDTF>
@@ -482,10 +481,10 @@ fluxR6(10)	0.298543
           &lt;CN=Root,Model=P9 Evaluable,Vector=Values[MAR7],Reference=Value&gt;/&lt;CN=Root,Model=P9 Evaluable,Vector=Values[Keq7],Reference=Value&gt;
         </Expression>
       </ModelValue>
-      <ModelValue key="ModelValue_4" name="dG1" simulationType="assignment">
+      <ModelValue key="ModelValue_20" name="dG1" simulationType="assignment">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#ModelValue_4">
+  <rdf:Description rdf:about="#ModelValue_20">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2016-11-25T15:21:57Z</dcterms:W3CDTF>
@@ -498,10 +497,10 @@ fluxR6(10)	0.298543
           8.314/1000*297*log(&lt;CN=Root,Model=P9 Evaluable,Vector=Values[Des1],Reference=Value&gt;)
         </Expression>
       </ModelValue>
-      <ModelValue key="ModelValue_3" name="dG2" simulationType="assignment">
+      <ModelValue key="ModelValue_19" name="dG2" simulationType="assignment">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#ModelValue_3">
+  <rdf:Description rdf:about="#ModelValue_19">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2016-11-25T15:21:57Z</dcterms:W3CDTF>
@@ -514,10 +513,10 @@ fluxR6(10)	0.298543
           8.314/1000*297*log(&lt;CN=Root,Model=P9 Evaluable,Vector=Values[Des2],Reference=Value&gt;)
         </Expression>
       </ModelValue>
-      <ModelValue key="ModelValue_2" name="dG3" simulationType="assignment">
+      <ModelValue key="ModelValue_18" name="dG3" simulationType="assignment">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#ModelValue_2">
+  <rdf:Description rdf:about="#ModelValue_18">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2016-11-25T15:21:57Z</dcterms:W3CDTF>
@@ -530,10 +529,10 @@ fluxR6(10)	0.298543
           8.314/1000*297*log(&lt;CN=Root,Model=P9 Evaluable,Vector=Values[Des3],Reference=Value&gt;)
         </Expression>
       </ModelValue>
-      <ModelValue key="ModelValue_1" name="dG4" simulationType="assignment">
+      <ModelValue key="ModelValue_17" name="dG4" simulationType="assignment">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#ModelValue_1">
+  <rdf:Description rdf:about="#ModelValue_17">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2016-11-25T15:21:57Z</dcterms:W3CDTF>
@@ -546,10 +545,10 @@ fluxR6(10)	0.298543
           8.314/1000*297*log(&lt;CN=Root,Model=P9 Evaluable,Vector=Values[Des4],Reference=Value&gt;)
         </Expression>
       </ModelValue>
-      <ModelValue key="ModelValue_0" name="dG5" simulationType="assignment">
+      <ModelValue key="ModelValue_16" name="dG5" simulationType="assignment">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#ModelValue_0">
+  <rdf:Description rdf:about="#ModelValue_16">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2016-11-25T15:21:57Z</dcterms:W3CDTF>
@@ -562,10 +561,10 @@ fluxR6(10)	0.298543
           8.314/1000*297*log(&lt;CN=Root,Model=P9 Evaluable,Vector=Values[Des5],Reference=Value&gt;)
         </Expression>
       </ModelValue>
-      <ModelValue key="ModelValue_28" name="dG6" simulationType="assignment">
+      <ModelValue key="ModelValue_15" name="dG6" simulationType="assignment">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#ModelValue_28">
+  <rdf:Description rdf:about="#ModelValue_15">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2016-11-25T15:21:57Z</dcterms:W3CDTF>
@@ -578,10 +577,10 @@ fluxR6(10)	0.298543
           8.314/1000*297*log(&lt;CN=Root,Model=P9 Evaluable,Vector=Values[Des6],Reference=Value&gt;)
         </Expression>
       </ModelValue>
-      <ModelValue key="ModelValue_29" name="dG7" simulationType="assignment">
+      <ModelValue key="ModelValue_14" name="dG7" simulationType="assignment">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#ModelValue_29">
+  <rdf:Description rdf:about="#ModelValue_14">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2016-11-25T15:21:57Z</dcterms:W3CDTF>
@@ -596,298 +595,7 @@ fluxR6(10)	0.298543
       </ModelValue>
     </ListOfModelValues>
     <ListOfReactions>
-      <Reaction key="Reaction_9" name="R1" reversible="true" fast="false">
-        <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_9">
-    <dcterms:created>
-      <rdf:Description>
-        <dcterms:W3CDTF>2016-11-25T15:03:37Z</dcterms:W3CDTF>
-      </rdf:Description>
-    </dcterms:created>
-  </rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
-        <ListOfSubstrates>
-          <Substrate metabolite="Metabolite_186" stoichiometry="1"/>
-        </ListOfSubstrates>
-        <ListOfProducts>
-          <Product metabolite="Metabolite_190" stoichiometry="1"/>
-        </ListOfProducts>
-        <ListOfConstants>
-          <Constant key="Parameter_46" name="Kms" value="0.1"/>
-          <Constant key="Parameter_4175" name="Kmp" value="0.1"/>
-          <Constant key="Parameter_4186" name="Vf" value="10"/>
-          <Constant key="Parameter_3982" name="Keq" value="10"/>
-        </ListOfConstants>
-        <KineticLaw function="Function_36">
-          <ListOfCallParameters>
-            <CallParameter functionParameter="FunctionParameter_252">
-              <SourceParameter reference="Metabolite_186"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_248">
-              <SourceParameter reference="Metabolite_190"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_257">
-              <SourceParameter reference="ModelValue_14"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_259">
-              <SourceParameter reference="ModelValue_14"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_256">
-              <SourceParameter reference="ModelValue_15"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_236">
-              <SourceParameter reference="ModelValue_16"/>
-            </CallParameter>
-          </ListOfCallParameters>
-        </KineticLaw>
-      </Reaction>
-      <Reaction key="Reaction_8" name="R2" reversible="true" fast="false">
-        <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_8">
-    <dcterms:created>
-      <rdf:Description>
-        <dcterms:W3CDTF>2016-11-25T15:03:37Z</dcterms:W3CDTF>
-      </rdf:Description>
-    </dcterms:created>
-  </rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
-        <ListOfSubstrates>
-          <Substrate metabolite="Metabolite_190" stoichiometry="1"/>
-        </ListOfSubstrates>
-        <ListOfProducts>
-          <Product metabolite="Metabolite_172" stoichiometry="1"/>
-        </ListOfProducts>
-        <ListOfConstants>
-          <Constant key="Parameter_4412" name="Kms" value="0.1"/>
-          <Constant key="Parameter_4413" name="Kmp" value="0.1"/>
-          <Constant key="Parameter_3935" name="Vf" value="10"/>
-          <Constant key="Parameter_3933" name="Keq" value="15"/>
-        </ListOfConstants>
-        <KineticLaw function="Function_36">
-          <ListOfCallParameters>
-            <CallParameter functionParameter="FunctionParameter_252">
-              <SourceParameter reference="Metabolite_190"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_248">
-              <SourceParameter reference="Metabolite_172"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_257">
-              <SourceParameter reference="ModelValue_14"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_259">
-              <SourceParameter reference="ModelValue_14"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_256">
-              <SourceParameter reference="ModelValue_15"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_236">
-              <SourceParameter reference="ModelValue_17"/>
-            </CallParameter>
-          </ListOfCallParameters>
-        </KineticLaw>
-      </Reaction>
-      <Reaction key="Reaction_10" name="R6" reversible="true" fast="false">
-        <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_10">
-    <dcterms:created>
-      <rdf:Description>
-        <dcterms:W3CDTF>2016-11-25T15:03:37Z</dcterms:W3CDTF>
-      </rdf:Description>
-    </dcterms:created>
-  </rdf:Description>
-</rdf:RDF>
-
-        </MiriamAnnotation>
-        <ListOfSubstrates>
-          <Substrate metabolite="Metabolite_172" stoichiometry="1"/>
-        </ListOfSubstrates>
-        <ListOfProducts>
-          <Product metabolite="Metabolite_200" stoichiometry="1"/>
-        </ListOfProducts>
-        <ListOfConstants>
-          <Constant key="Parameter_3936" name="Kms" value="4"/>
-          <Constant key="Parameter_3932" name="Kmp" value="0.1"/>
-          <Constant key="Parameter_3931" name="Vf" value="10"/>
-          <Constant key="Parameter_3930" name="Keq" value="10"/>
-        </ListOfConstants>
-        <KineticLaw function="Function_36">
-          <ListOfCallParameters>
-            <CallParameter functionParameter="FunctionParameter_252">
-              <SourceParameter reference="Metabolite_172"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_248">
-              <SourceParameter reference="Metabolite_200"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_257">
-              <SourceParameter reference="ModelValue_18"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_259">
-              <SourceParameter reference="ModelValue_14"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_256">
-              <SourceParameter reference="ModelValue_15"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_236">
-              <SourceParameter reference="ModelValue_21"/>
-            </CallParameter>
-          </ListOfCallParameters>
-        </KineticLaw>
-      </Reaction>
-      <Reaction key="Reaction_11" name="R4" reversible="true" fast="false">
-        <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_11">
-    <dcterms:created>
-      <rdf:Description>
-        <dcterms:W3CDTF>2016-11-25T15:03:37Z</dcterms:W3CDTF>
-      </rdf:Description>
-    </dcterms:created>
-  </rdf:Description>
-</rdf:RDF>
-
-        </MiriamAnnotation>
-        <ListOfSubstrates>
-          <Substrate metabolite="Metabolite_202" stoichiometry="1"/>
-        </ListOfSubstrates>
-        <ListOfProducts>
-          <Product metabolite="Metabolite_204" stoichiometry="1"/>
-        </ListOfProducts>
-        <ListOfConstants>
-          <Constant key="Parameter_3929" name="Kms" value="0.1"/>
-          <Constant key="Parameter_3928" name="Kmp" value="0.1"/>
-          <Constant key="Parameter_3927" name="Vf" value="10"/>
-          <Constant key="Parameter_4157" name="Keq" value="6"/>
-        </ListOfConstants>
-        <KineticLaw function="Function_36">
-          <ListOfCallParameters>
-            <CallParameter functionParameter="FunctionParameter_252">
-              <SourceParameter reference="Metabolite_202"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_248">
-              <SourceParameter reference="Metabolite_204"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_257">
-              <SourceParameter reference="ModelValue_14"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_259">
-              <SourceParameter reference="ModelValue_14"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_256">
-              <SourceParameter reference="ModelValue_15"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_236">
-              <SourceParameter reference="ModelValue_19"/>
-            </CallParameter>
-          </ListOfCallParameters>
-        </KineticLaw>
-      </Reaction>
-      <Reaction key="Reaction_12" name="R5" reversible="true" fast="false">
-        <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_12">
-    <dcterms:created>
-      <rdf:Description>
-        <dcterms:W3CDTF>2016-11-25T15:03:37Z</dcterms:W3CDTF>
-      </rdf:Description>
-    </dcterms:created>
-  </rdf:Description>
-</rdf:RDF>
-
-        </MiriamAnnotation>
-        <ListOfSubstrates>
-          <Substrate metabolite="Metabolite_172" stoichiometry="1"/>
-        </ListOfSubstrates>
-        <ListOfProducts>
-          <Product metabolite="Metabolite_204" stoichiometry="1"/>
-        </ListOfProducts>
-        <ListOfConstants>
-          <Constant key="Parameter_4156" name="Kms" value="0.1"/>
-          <Constant key="Parameter_3919" name="Kmp" value="0.1"/>
-          <Constant key="Parameter_49" name="Vf" value="10"/>
-          <Constant key="Parameter_4276" name="Keq" value="1.6"/>
-        </ListOfConstants>
-        <KineticLaw function="Function_36">
-          <ListOfCallParameters>
-            <CallParameter functionParameter="FunctionParameter_252">
-              <SourceParameter reference="Metabolite_172"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_248">
-              <SourceParameter reference="Metabolite_204"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_257">
-              <SourceParameter reference="ModelValue_14"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_259">
-              <SourceParameter reference="ModelValue_14"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_256">
-              <SourceParameter reference="ModelValue_15"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_236">
-              <SourceParameter reference="ModelValue_20"/>
-            </CallParameter>
-          </ListOfCallParameters>
-        </KineticLaw>
-      </Reaction>
-      <Reaction key="Reaction_13" name="R3" reversible="true" fast="false">
-        <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_13">
-    <dcterms:created>
-      <rdf:Description>
-        <dcterms:W3CDTF>2016-11-25T15:03:37Z</dcterms:W3CDTF>
-      </rdf:Description>
-    </dcterms:created>
-  </rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
-        <ListOfSubstrates>
-          <Substrate metabolite="Metabolite_190" stoichiometry="1"/>
-        </ListOfSubstrates>
-        <ListOfProducts>
-          <Product metabolite="Metabolite_202" stoichiometry="1"/>
-        </ListOfProducts>
-        <ListOfConstants>
-          <Constant key="Parameter_4430" name="Kms" value="0.1"/>
-          <Constant key="Parameter_4431" name="Kmp" value="0.1"/>
-          <Constant key="Parameter_4432" name="Vf" value="10"/>
-          <Constant key="Parameter_4433" name="Keq" value="4"/>
-        </ListOfConstants>
-        <KineticLaw function="Function_36">
-          <ListOfCallParameters>
-            <CallParameter functionParameter="FunctionParameter_252">
-              <SourceParameter reference="Metabolite_190"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_248">
-              <SourceParameter reference="Metabolite_202"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_257">
-              <SourceParameter reference="ModelValue_14"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_259">
-              <SourceParameter reference="ModelValue_14"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_256">
-              <SourceParameter reference="ModelValue_15"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_236">
-              <SourceParameter reference="ModelValue_18"/>
-            </CallParameter>
-          </ListOfCallParameters>
-        </KineticLaw>
-      </Reaction>
-      <Reaction key="Reaction_14" name="R7" reversible="true" fast="false">
+      <Reaction key="Reaction_14" name="R1" reversible="true" fast="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Reaction_14">
@@ -900,36 +608,318 @@ fluxR6(10)	0.298543
 </rdf:RDF>
         </MiriamAnnotation>
         <ListOfSubstrates>
-          <Substrate metabolite="Metabolite_204" stoichiometry="1"/>
+          <Substrate metabolite="Metabolite_256" stoichiometry="1"/>
         </ListOfSubstrates>
         <ListOfProducts>
-          <Product metabolite="Metabolite_206" stoichiometry="1"/>
+          <Product metabolite="Metabolite_260" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4434" name="Kms" value="0.1"/>
-          <Constant key="Parameter_4435" name="Kmp" value="0.1"/>
-          <Constant key="Parameter_4436" name="Vf" value="10"/>
-          <Constant key="Parameter_4437" name="Keq" value="10"/>
+          <Constant key="Parameter_4044" name="Kms" value="0.1"/>
+          <Constant key="Parameter_3958" name="Kmp" value="0.1"/>
+          <Constant key="Parameter_3957" name="Vf" value="10"/>
+          <Constant key="Parameter_3964" name="Keq" value="10"/>
         </ListOfConstants>
         <KineticLaw function="Function_36">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_252">
-              <SourceParameter reference="Metabolite_204"/>
+              <SourceParameter reference="Metabolite_256"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_248">
-              <SourceParameter reference="Metabolite_206"/>
+              <SourceParameter reference="Metabolite_260"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_257">
-              <SourceParameter reference="ModelValue_14"/>
+              <SourceParameter reference="ModelValue_29"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_259">
-              <SourceParameter reference="ModelValue_14"/>
+              <SourceParameter reference="ModelValue_29"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_256">
-              <SourceParameter reference="ModelValue_15"/>
+              <SourceParameter reference="ModelValue_28"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_236">
-              <SourceParameter reference="ModelValue_22"/>
+              <SourceParameter reference="ModelValue_0"/>
+            </CallParameter>
+          </ListOfCallParameters>
+        </KineticLaw>
+      </Reaction>
+      <Reaction key="Reaction_13" name="R2" reversible="true" fast="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Reaction_13">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2016-11-25T15:03:37Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+        <ListOfSubstrates>
+          <Substrate metabolite="Metabolite_260" stoichiometry="1"/>
+        </ListOfSubstrates>
+        <ListOfProducts>
+          <Product metabolite="Metabolite_242" stoichiometry="1"/>
+        </ListOfProducts>
+        <ListOfConstants>
+          <Constant key="Parameter_3965" name="Kms" value="0.1"/>
+          <Constant key="Parameter_3952" name="Kmp" value="0.1"/>
+          <Constant key="Parameter_3953" name="Vf" value="10"/>
+          <Constant key="Parameter_3954" name="Keq" value="15"/>
+        </ListOfConstants>
+        <KineticLaw function="Function_36">
+          <ListOfCallParameters>
+            <CallParameter functionParameter="FunctionParameter_252">
+              <SourceParameter reference="Metabolite_260"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_248">
+              <SourceParameter reference="Metabolite_242"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_257">
+              <SourceParameter reference="ModelValue_29"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_259">
+              <SourceParameter reference="ModelValue_29"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_256">
+              <SourceParameter reference="ModelValue_28"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_236">
+              <SourceParameter reference="ModelValue_1"/>
+            </CallParameter>
+          </ListOfCallParameters>
+        </KineticLaw>
+      </Reaction>
+      <Reaction key="Reaction_12" name="R6" reversible="true" fast="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Reaction_12">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2016-11-25T15:03:37Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+        <ListOfSubstrates>
+          <Substrate metabolite="Metabolite_242" stoichiometry="1"/>
+        </ListOfSubstrates>
+        <ListOfProducts>
+          <Product metabolite="Metabolite_270" stoichiometry="1"/>
+        </ListOfProducts>
+        <ListOfConstants>
+          <Constant key="Parameter_3914" name="Kms" value="4"/>
+          <Constant key="Parameter_3915" name="Kmp" value="0.1"/>
+          <Constant key="Parameter_4033" name="Vf" value="10"/>
+          <Constant key="Parameter_4341" name="Keq" value="10"/>
+        </ListOfConstants>
+        <KineticLaw function="Function_36">
+          <ListOfCallParameters>
+            <CallParameter functionParameter="FunctionParameter_252">
+              <SourceParameter reference="Metabolite_242"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_248">
+              <SourceParameter reference="Metabolite_270"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_257">
+              <SourceParameter reference="ModelValue_2"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_259">
+              <SourceParameter reference="ModelValue_29"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_256">
+              <SourceParameter reference="ModelValue_28"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_236">
+              <SourceParameter reference="ModelValue_5"/>
+            </CallParameter>
+          </ListOfCallParameters>
+        </KineticLaw>
+      </Reaction>
+      <Reaction key="Reaction_11" name="R4" reversible="true" fast="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Reaction_11">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2016-11-25T15:03:37Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+        <ListOfSubstrates>
+          <Substrate metabolite="Metabolite_272" stoichiometry="1"/>
+        </ListOfSubstrates>
+        <ListOfProducts>
+          <Product metabolite="Metabolite_274" stoichiometry="1"/>
+        </ListOfProducts>
+        <ListOfConstants>
+          <Constant key="Parameter_4346" name="Kms" value="0.1"/>
+          <Constant key="Parameter_4349" name="Kmp" value="0.1"/>
+          <Constant key="Parameter_3829" name="Vf" value="10"/>
+          <Constant key="Parameter_3828" name="Keq" value="6"/>
+        </ListOfConstants>
+        <KineticLaw function="Function_36">
+          <ListOfCallParameters>
+            <CallParameter functionParameter="FunctionParameter_252">
+              <SourceParameter reference="Metabolite_272"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_248">
+              <SourceParameter reference="Metabolite_274"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_257">
+              <SourceParameter reference="ModelValue_29"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_259">
+              <SourceParameter reference="ModelValue_29"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_256">
+              <SourceParameter reference="ModelValue_28"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_236">
+              <SourceParameter reference="ModelValue_3"/>
+            </CallParameter>
+          </ListOfCallParameters>
+        </KineticLaw>
+      </Reaction>
+      <Reaction key="Reaction_10" name="R5" reversible="true" fast="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Reaction_10">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2016-11-25T15:03:37Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+        <ListOfSubstrates>
+          <Substrate metabolite="Metabolite_242" stoichiometry="1"/>
+        </ListOfSubstrates>
+        <ListOfProducts>
+          <Product metabolite="Metabolite_274" stoichiometry="1"/>
+        </ListOfProducts>
+        <ListOfConstants>
+          <Constant key="Parameter_3827" name="Kms" value="0.1"/>
+          <Constant key="Parameter_3975" name="Kmp" value="0.1"/>
+          <Constant key="Parameter_3976" name="Vf" value="10"/>
+          <Constant key="Parameter_3847" name="Keq" value="1.6"/>
+        </ListOfConstants>
+        <KineticLaw function="Function_36">
+          <ListOfCallParameters>
+            <CallParameter functionParameter="FunctionParameter_252">
+              <SourceParameter reference="Metabolite_242"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_248">
+              <SourceParameter reference="Metabolite_274"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_257">
+              <SourceParameter reference="ModelValue_29"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_259">
+              <SourceParameter reference="ModelValue_29"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_256">
+              <SourceParameter reference="ModelValue_28"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_236">
+              <SourceParameter reference="ModelValue_4"/>
+            </CallParameter>
+          </ListOfCallParameters>
+        </KineticLaw>
+      </Reaction>
+      <Reaction key="Reaction_8" name="R3" reversible="true" fast="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Reaction_8">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2016-11-25T15:03:37Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+        <ListOfSubstrates>
+          <Substrate metabolite="Metabolite_260" stoichiometry="1"/>
+        </ListOfSubstrates>
+        <ListOfProducts>
+          <Product metabolite="Metabolite_272" stoichiometry="1"/>
+        </ListOfProducts>
+        <ListOfConstants>
+          <Constant key="Parameter_3846" name="Kms" value="0.1"/>
+          <Constant key="Parameter_3831" name="Kmp" value="0.1"/>
+          <Constant key="Parameter_3830" name="Vf" value="10"/>
+          <Constant key="Parameter_4239" name="Keq" value="4"/>
+        </ListOfConstants>
+        <KineticLaw function="Function_36">
+          <ListOfCallParameters>
+            <CallParameter functionParameter="FunctionParameter_252">
+              <SourceParameter reference="Metabolite_260"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_248">
+              <SourceParameter reference="Metabolite_272"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_257">
+              <SourceParameter reference="ModelValue_29"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_259">
+              <SourceParameter reference="ModelValue_29"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_256">
+              <SourceParameter reference="ModelValue_28"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_236">
+              <SourceParameter reference="ModelValue_2"/>
+            </CallParameter>
+          </ListOfCallParameters>
+        </KineticLaw>
+      </Reaction>
+      <Reaction key="Reaction_9" name="R7" reversible="true" fast="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Reaction_9">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2016-11-25T15:03:37Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+        <ListOfSubstrates>
+          <Substrate metabolite="Metabolite_274" stoichiometry="1"/>
+        </ListOfSubstrates>
+        <ListOfProducts>
+          <Product metabolite="Metabolite_276" stoichiometry="1"/>
+        </ListOfProducts>
+        <ListOfConstants>
+          <Constant key="Parameter_4234" name="Kms" value="0.1"/>
+          <Constant key="Parameter_4242" name="Kmp" value="0.1"/>
+          <Constant key="Parameter_4241" name="Vf" value="10"/>
+          <Constant key="Parameter_4240" name="Keq" value="10"/>
+        </ListOfConstants>
+        <KineticLaw function="Function_36">
+          <ListOfCallParameters>
+            <CallParameter functionParameter="FunctionParameter_252">
+              <SourceParameter reference="Metabolite_274"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_248">
+              <SourceParameter reference="Metabolite_276"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_257">
+              <SourceParameter reference="ModelValue_29"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_259">
+              <SourceParameter reference="ModelValue_29"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_256">
+              <SourceParameter reference="ModelValue_28"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_236">
+              <SourceParameter reference="ModelValue_6"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
@@ -1143,53 +1133,53 @@ fluxR6(10)	0.298543
       </ModelParameterSet>
     </ListOfModelParameterSets>
     <StateTemplate>
-      <StateTemplateVariable objectReference="Model_26"/>
-      <StateTemplateVariable objectReference="Metabolite_190"/>
-      <StateTemplateVariable objectReference="Metabolite_204"/>
-      <StateTemplateVariable objectReference="Metabolite_172"/>
-      <StateTemplateVariable objectReference="Metabolite_202"/>
-      <StateTemplateVariable objectReference="ModelValue_23"/>
-      <StateTemplateVariable objectReference="ModelValue_24"/>
-      <StateTemplateVariable objectReference="ModelValue_25"/>
-      <StateTemplateVariable objectReference="ModelValue_26"/>
-      <StateTemplateVariable objectReference="ModelValue_27"/>
-      <StateTemplateVariable objectReference="ModelValue_13"/>
-      <StateTemplateVariable objectReference="ModelValue_12"/>
-      <StateTemplateVariable objectReference="ModelValue_11"/>
-      <StateTemplateVariable objectReference="ModelValue_10"/>
-      <StateTemplateVariable objectReference="ModelValue_9"/>
-      <StateTemplateVariable objectReference="ModelValue_8"/>
+      <StateTemplateVariable objectReference="Model_36"/>
+      <StateTemplateVariable objectReference="Metabolite_260"/>
+      <StateTemplateVariable objectReference="Metabolite_274"/>
+      <StateTemplateVariable objectReference="Metabolite_242"/>
+      <StateTemplateVariable objectReference="Metabolite_272"/>
       <StateTemplateVariable objectReference="ModelValue_7"/>
-      <StateTemplateVariable objectReference="ModelValue_6"/>
-      <StateTemplateVariable objectReference="ModelValue_5"/>
-      <StateTemplateVariable objectReference="ModelValue_4"/>
-      <StateTemplateVariable objectReference="ModelValue_3"/>
-      <StateTemplateVariable objectReference="ModelValue_2"/>
-      <StateTemplateVariable objectReference="ModelValue_1"/>
-      <StateTemplateVariable objectReference="ModelValue_0"/>
-      <StateTemplateVariable objectReference="ModelValue_28"/>
-      <StateTemplateVariable objectReference="ModelValue_29"/>
-      <StateTemplateVariable objectReference="Metabolite_186"/>
-      <StateTemplateVariable objectReference="Metabolite_200"/>
-      <StateTemplateVariable objectReference="Metabolite_206"/>
-      <StateTemplateVariable objectReference="Compartment_24"/>
-      <StateTemplateVariable objectReference="ModelValue_14"/>
-      <StateTemplateVariable objectReference="ModelValue_15"/>
-      <StateTemplateVariable objectReference="ModelValue_16"/>
-      <StateTemplateVariable objectReference="ModelValue_17"/>
-      <StateTemplateVariable objectReference="ModelValue_18"/>
-      <StateTemplateVariable objectReference="ModelValue_19"/>
-      <StateTemplateVariable objectReference="ModelValue_20"/>
-      <StateTemplateVariable objectReference="ModelValue_21"/>
+      <StateTemplateVariable objectReference="ModelValue_8"/>
+      <StateTemplateVariable objectReference="ModelValue_9"/>
+      <StateTemplateVariable objectReference="ModelValue_10"/>
+      <StateTemplateVariable objectReference="ModelValue_11"/>
+      <StateTemplateVariable objectReference="ModelValue_12"/>
+      <StateTemplateVariable objectReference="ModelValue_13"/>
+      <StateTemplateVariable objectReference="ModelValue_27"/>
+      <StateTemplateVariable objectReference="ModelValue_26"/>
+      <StateTemplateVariable objectReference="ModelValue_25"/>
+      <StateTemplateVariable objectReference="ModelValue_24"/>
+      <StateTemplateVariable objectReference="ModelValue_23"/>
       <StateTemplateVariable objectReference="ModelValue_22"/>
+      <StateTemplateVariable objectReference="ModelValue_21"/>
+      <StateTemplateVariable objectReference="ModelValue_20"/>
+      <StateTemplateVariable objectReference="ModelValue_19"/>
+      <StateTemplateVariable objectReference="ModelValue_18"/>
+      <StateTemplateVariable objectReference="ModelValue_17"/>
+      <StateTemplateVariable objectReference="ModelValue_16"/>
+      <StateTemplateVariable objectReference="ModelValue_15"/>
+      <StateTemplateVariable objectReference="ModelValue_14"/>
+      <StateTemplateVariable objectReference="Metabolite_256"/>
+      <StateTemplateVariable objectReference="Metabolite_270"/>
+      <StateTemplateVariable objectReference="Metabolite_276"/>
+      <StateTemplateVariable objectReference="Compartment_34"/>
+      <StateTemplateVariable objectReference="ModelValue_29"/>
+      <StateTemplateVariable objectReference="ModelValue_28"/>
+      <StateTemplateVariable objectReference="ModelValue_0"/>
+      <StateTemplateVariable objectReference="ModelValue_1"/>
+      <StateTemplateVariable objectReference="ModelValue_2"/>
+      <StateTemplateVariable objectReference="ModelValue_3"/>
+      <StateTemplateVariable objectReference="ModelValue_4"/>
+      <StateTemplateVariable objectReference="ModelValue_5"/>
+      <StateTemplateVariable objectReference="ModelValue_6"/>
     </StateTemplate>
     <InitialState type="initialState">
       0 6.022141790000001e+20 6.022141790000001e+20 6.022141790000001e+20 6.022141790000001e+20 1 1 1 1 1 1 1 0.1 0.06666666666666667 0.25 0.1666666666666667 0.625 0.1 0.1 -5.685676661556291 -6.686874623473241 -3.423118441550179 -4.424316403467128 -1.160560221544066 -5.685676661556291 -5.685676661556291 6.022141790000001e+20 6.022141790000001e+20 6.022141790000001e+20 1 0.1 10 10 15 4 6 1.6 10 10 
     </InitialState>
   </Model>
   <ListOfTasks>
-    <Task key="Task_0" name="Steady-State" type="steadyState" scheduled="false" updateModel="false">
-      <Report reference="Report_0" target="" append="1" confirmOverwrite="1"/>
+    <Task key="Task_13" name="Steady-State" type="steadyState" scheduled="false" updateModel="false">
+      <Report reference="Report_8" target="" append="1" confirmOverwrite="1"/>
       <Problem>
         <Parameter name="JacobianRequested" type="bool" value="1"/>
         <Parameter name="StabilityAnalysisRequested" type="bool" value="1"/>
@@ -1206,7 +1196,7 @@ fluxR6(10)	0.298543
         <Parameter name="Maximum duration for backward integration" type="unsignedFloat" value="1000000"/>
       </Method>
     </Task>
-    <Task key="Task_1" name="Time-Course" type="timeCourse" scheduled="false" updateModel="false">
+    <Task key="Task_11" name="Time-Course" type="timeCourse" scheduled="false" updateModel="false">
       <Problem>
         <Parameter name="StepNumber" type="unsignedInteger" value="100"/>
         <Parameter name="StepSize" type="float" value="0.01"/>
@@ -1223,7 +1213,7 @@ fluxR6(10)	0.298543
         <Parameter name="Max Internal Steps" type="unsignedInteger" value="10000"/>
       </Method>
     </Task>
-    <Task key="Task_2" name="Scan" type="scan" scheduled="false" updateModel="false">
+    <Task key="Task_10" name="Scan" type="scan" scheduled="false" updateModel="false">
       <Problem>
         <Parameter name="Subtask" type="unsignedInteger" value="1"/>
         <ParameterGroup name="ScanItems">
@@ -1234,15 +1224,15 @@ fluxR6(10)	0.298543
       <Method name="Scan Framework" type="ScanFramework">
       </Method>
     </Task>
-    <Task key="Task_3" name="Elementary Flux Modes" type="fluxMode" scheduled="false" updateModel="false">
-      <Report reference="Report_1" target="" append="1" confirmOverwrite="1"/>
+    <Task key="Task_9" name="Elementary Flux Modes" type="fluxMode" scheduled="false" updateModel="false">
+      <Report reference="Report_7" target="" append="1" confirmOverwrite="1"/>
       <Problem>
       </Problem>
       <Method name="EFM Algorithm" type="EFMAlgorithm">
       </Method>
     </Task>
-    <Task key="Task_4" name="Optimization" type="optimization" scheduled="false" updateModel="false">
-      <Report reference="Report_2" target="" append="1" confirmOverwrite="1"/>
+    <Task key="Task_8" name="Optimization" type="optimization" scheduled="false" updateModel="false">
+      <Report reference="Report_6" target="" append="1" confirmOverwrite="1"/>
       <Problem>
         <Parameter name="Subtask" type="cn" value="CN=Root,Vector=TaskList[Steady-State]"/>
         <ParameterText name="ObjectiveExpression" type="expression">
@@ -1262,8 +1252,8 @@ fluxR6(10)	0.298543
         <Parameter name="Seed" type="unsignedInteger" value="0"/>
       </Method>
     </Task>
-    <Task key="Task_5" name="Parameter Estimation" type="parameterFitting" scheduled="false" updateModel="false">
-      <Report reference="Report_3" target="" append="1" confirmOverwrite="1"/>
+    <Task key="Task_7" name="Parameter Estimation" type="parameterFitting" scheduled="false" updateModel="false">
+      <Report reference="Report_5" target="" append="1" confirmOverwrite="1"/>
       <Problem>
         <Parameter name="Maximize" type="bool" value="0"/>
         <Parameter name="Randomize Start Values" type="bool" value="0"/>
@@ -1292,7 +1282,7 @@ fluxR6(10)	0.298543
     <Task key="Task_6" name="Metabolic Control Analysis" type="metabolicControlAnalysis" scheduled="false" updateModel="false">
       <Report reference="Report_4" target="" append="1" confirmOverwrite="1"/>
       <Problem>
-        <Parameter name="Steady-State" type="key" value="Task_0"/>
+        <Parameter name="Steady-State" type="key" value="Task_13"/>
       </Problem>
       <Method name="MCA Method (Reder)" type="MCAMethod(Reder)">
         <Parameter name="Modulation Factor" type="unsignedFloat" value="1e-09"/>
@@ -1300,8 +1290,8 @@ fluxR6(10)	0.298543
         <Parameter name="Use Smallbone" type="bool" value="1"/>
       </Method>
     </Task>
-    <Task key="Task_7" name="Lyapunov Exponents" type="lyapunovExponents" scheduled="false" updateModel="false">
-      <Report reference="Report_5" target="" append="1" confirmOverwrite="1"/>
+    <Task key="Task_5" name="Lyapunov Exponents" type="lyapunovExponents" scheduled="false" updateModel="false">
+      <Report reference="Report_3" target="" append="1" confirmOverwrite="1"/>
       <Problem>
         <Parameter name="ExponentNumber" type="unsignedInteger" value="3"/>
         <Parameter name="DivergenceRequested" type="bool" value="1"/>
@@ -1315,8 +1305,8 @@ fluxR6(10)	0.298543
         <Parameter name="Max Internal Steps" type="unsignedInteger" value="10000"/>
       </Method>
     </Task>
-    <Task key="Task_8" name="Time Scale Separation Analysis" type="timeScaleSeparationAnalysis" scheduled="false" updateModel="false">
-      <Report reference="Report_6" target="" append="1" confirmOverwrite="1"/>
+    <Task key="Task_4" name="Time Scale Separation Analysis" type="timeScaleSeparationAnalysis" scheduled="false" updateModel="false">
+      <Report reference="Report_2" target="" append="1" confirmOverwrite="1"/>
       <Problem>
         <Parameter name="StepNumber" type="unsignedInteger" value="100"/>
         <Parameter name="StepSize" type="float" value="0.01"/>
@@ -1328,8 +1318,8 @@ fluxR6(10)	0.298543
         <Parameter name="Deuflhard Tolerance" type="unsignedFloat" value="1e-06"/>
       </Method>
     </Task>
-    <Task key="Task_9" name="Sensitivities" type="sensitivities" scheduled="false" updateModel="false">
-      <Report reference="Report_7" target="" append="1" confirmOverwrite="1"/>
+    <Task key="Task_3" name="Sensitivities" type="sensitivities" scheduled="false" updateModel="false">
+      <Report reference="Report_1" target="" append="1" confirmOverwrite="1"/>
       <Problem>
         <Parameter name="SubtaskType" type="unsignedInteger" value="1"/>
         <ParameterGroup name="TargetFunctions">
@@ -1348,13 +1338,13 @@ fluxR6(10)	0.298543
         <Parameter name="Delta minimum" type="unsignedFloat" value="1e-12"/>
       </Method>
     </Task>
-    <Task key="Task_10" name="Moieties" type="moieties" scheduled="false" updateModel="false">
+    <Task key="Task_2" name="Moieties" type="moieties" scheduled="false" updateModel="false">
       <Problem>
       </Problem>
       <Method name="Householder Reduction" type="Householder">
       </Method>
     </Task>
-    <Task key="Task_11" name="Cross Section" type="crosssection" scheduled="false" updateModel="false">
+    <Task key="Task_1" name="Cross Section" type="crosssection" scheduled="false" updateModel="false">
       <Problem>
         <Parameter name="StepNumber" type="unsignedInteger" value="100"/>
         <Parameter name="StepSize" type="float" value="0.01"/>
@@ -1386,17 +1376,17 @@ fluxR6(10)	0.298543
         <Parameter name="Max Internal Steps" type="unsignedInteger" value="10000"/>
       </Method>
     </Task>
-    <Task key="Task_12" name="Linear Noise Approximation" type="linearNoiseApproximation" scheduled="false" updateModel="false">
-      <Report reference="Report_8" target="" append="1" confirmOverwrite="1"/>
+    <Task key="Task_0" name="Linear Noise Approximation" type="linearNoiseApproximation" scheduled="false" updateModel="false">
+      <Report reference="Report_0" target="" append="1" confirmOverwrite="1"/>
       <Problem>
-        <Parameter name="Steady-State" type="key" value="Task_0"/>
+        <Parameter name="Steady-State" type="key" value="Task_13"/>
       </Problem>
       <Method name="Linear Noise Approximation" type="LinearNoiseApproximation">
       </Method>
     </Task>
   </ListOfTasks>
   <ListOfReports>
-    <Report key="Report_0" name="Steady-State" taskType="steadyState" separator="&#x09;" precision="6">
+    <Report key="Report_8" name="Steady-State" taskType="steadyState" separator="&#x09;" precision="6">
       <Comment>
         Automatically generated report.
       </Comment>
@@ -1404,7 +1394,7 @@ fluxR6(10)	0.298543
         <Object cn="CN=Root,Vector=TaskList[Steady-State]"/>
       </Footer>
     </Report>
-    <Report key="Report_1" name="Elementary Flux Modes" taskType="fluxMode" separator="&#x09;" precision="6">
+    <Report key="Report_7" name="Elementary Flux Modes" taskType="fluxMode" separator="&#x09;" precision="6">
       <Comment>
         Automatically generated report.
       </Comment>
@@ -1412,7 +1402,7 @@ fluxR6(10)	0.298543
         <Object cn="CN=Root,Vector=TaskList[Elementary Flux Modes],Object=Result"/>
       </Footer>
     </Report>
-    <Report key="Report_2" name="Optimization" taskType="optimization" separator="&#x09;" precision="6">
+    <Report key="Report_6" name="Optimization" taskType="optimization" separator="&#x09;" precision="6">
       <Comment>
         Automatically generated report.
       </Comment>
@@ -1436,7 +1426,7 @@ fluxR6(10)	0.298543
         <Object cn="CN=Root,Vector=TaskList[Optimization],Object=Result"/>
       </Footer>
     </Report>
-    <Report key="Report_3" name="Parameter Estimation" taskType="parameterFitting" separator="&#x09;" precision="6">
+    <Report key="Report_5" name="Parameter Estimation" taskType="parameterFitting" separator="&#x09;" precision="6">
       <Comment>
         Automatically generated report.
       </Comment>
@@ -1472,7 +1462,7 @@ fluxR6(10)	0.298543
         <Object cn="CN=Root,Vector=TaskList[Metabolic Control Analysis],Object=Result"/>
       </Footer>
     </Report>
-    <Report key="Report_5" name="Lyapunov Exponents" taskType="lyapunovExponents" separator="&#x09;" precision="6">
+    <Report key="Report_3" name="Lyapunov Exponents" taskType="lyapunovExponents" separator="&#x09;" precision="6">
       <Comment>
         Automatically generated report.
       </Comment>
@@ -1484,7 +1474,7 @@ fluxR6(10)	0.298543
         <Object cn="CN=Root,Vector=TaskList[Lyapunov Exponents],Object=Result"/>
       </Footer>
     </Report>
-    <Report key="Report_6" name="Time Scale Separation Analysis" taskType="timeScaleSeparationAnalysis" separator="&#x09;" precision="6">
+    <Report key="Report_2" name="Time Scale Separation Analysis" taskType="timeScaleSeparationAnalysis" separator="&#x09;" precision="6">
       <Comment>
         Automatically generated report.
       </Comment>
@@ -1496,7 +1486,7 @@ fluxR6(10)	0.298543
         <Object cn="CN=Root,Vector=TaskList[Time Scale Separation Analysis],Object=Result"/>
       </Footer>
     </Report>
-    <Report key="Report_7" name="Sensitivities" taskType="sensitivities" separator="&#x09;" precision="6">
+    <Report key="Report_1" name="Sensitivities" taskType="sensitivities" separator="&#x09;" precision="6">
       <Comment>
         Automatically generated report.
       </Comment>
@@ -1508,7 +1498,7 @@ fluxR6(10)	0.298543
         <Object cn="CN=Root,Vector=TaskList[Sensitivities],Object=Result"/>
       </Footer>
     </Report>
-    <Report key="Report_8" name="Linear Noise Approximation" taskType="linearNoiseApproximation" separator="&#x09;" precision="6">
+    <Report key="Report_0" name="Linear Noise Approximation" taskType="linearNoiseApproximation" separator="&#x09;" precision="6">
       <Comment>
         Automatically generated report.
       </Comment>
