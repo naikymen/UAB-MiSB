@@ -1,0 +1,52 @@
+An equilibrium steady state (zero fluxes) was found.
+
+Species	Concentration (mmol/l)	Concentration Rate (mmol/(l*s))	Particle Number	Particle Number Rate (1/s)	Transition Time (s)
+S	0.909091	-4.44089e-16	5.47467e+20	-267437	inf
+P	9.09091	4.44089e-16	5.47467e+21	267437	inf
+
+Reaction	Flux (mmol/s)	Particle Flux (1/s)
+SP	4.44089e-16	267437
+
+Jacobian (complete system)
+
+Rows:    Variables of the system, including dependent species
+Columns: Variables of the system, including dependent species
+	S	P
+S	-2	0.2
+P	2	-0.2
+
+Eigenvalues	real	imaginary
+	0	0
+	-2.2	0
+
+Jacobian (reduced system)
+
+Rows:    Independent variables of the system
+Columns: Independent variables of the system
+	S
+S	-2.2
+
+Eigenvalues	real	imaginary
+	-2.2	0
+
+Stability Analysis of the Reduced System
+
+KINETIC STABILITY ANALYSIS
+The linear stability analysis based on the eigenvalues
+of the Jacobian matrix is only valid for steady states.
+
+Summary:
+This state is asymptotically stable.
+
+Eigenvalue statistics:
+ Largest real part: -2.2
+ Largest absolute imaginary part:  0
+ 1 are purely real
+ 0 are purely imaginary
+ 0 are complex
+ 0 are equal to zero
+ 0 have positive real part
+ 1 have negative real part
+ stiffness = 1.00000
+ time hierarchy = -nan
+

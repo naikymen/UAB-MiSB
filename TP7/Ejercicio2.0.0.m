@@ -1,3 +1,5 @@
+#Practica 6 - Ejercicio 2
+
 A = 1;
 B = 0;
 C = 0;

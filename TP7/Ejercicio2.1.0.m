@@ -1,3 +1,6 @@
+#Practica 6 - Ejercicio 2
+# Con salidas y entradas
+
 A = 1;
 B = 0;
 C = 0;
@@ -13,10 +16,6 @@ function dX = f(x,t)
   
   v = @(S,V) V*S/(S+km);
   
-  V = [
-  
-  dX = S*V
-  
   dX(1) = -v(x(1),Vm1) +0.05;  # A
   dX(2) = +v(x(1),Vm1) - v(x(2),Vm2) - v(x(2),Vm3);  # B
   dX(3) = +v(x(2),Vm2) -0.1*x(3);  # C
@@ -25,7 +24,7 @@ endfunction
 
 c = lsode(@f,X0, t);
 
-
+figure 1
 plot(t, c(:,1),'r');
 hold on;
 plot(t, c(:,2),'g');
