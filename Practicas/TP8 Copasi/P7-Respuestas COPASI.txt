@@ -1,0 +1,75 @@
+1H)
+El sistema ha llegado a un estado estacionario tipo asintótico.
+Los flujos son 3.01107e+21 mmol/(l*s)
+
+Jacobiano
+	S	P
+S	-2	2
+P	2	-2
+Valores propios	reales	imaginarios
+	0	0
+	-4	0
+
+Jacobiano reducido
+	S
+S	-4
+Valores propios	reales	imaginarios
+	-4	0
+
+1J) Estado estacionario
+S	5	mmol/l
+P	5	mmol/l
+R	1		(relación de desequilibrio)
+A	1		(relación de acción de masas)
+
+1K) Estado estacionario
+S	0.909091	mmol/l
+P	9.09091		mmol/l
+
+R	0.999816	(relación de desequilibrio)
+A	9.99816		(relación de acción de masas)
+
+1M) En ambos casos, el sistema no llega al equilibrio debido a las entradas y salidas. Esto se refleja en el valor de R, diferente de 1:
+R(k1=2) = 0.665166
+R(k1=20) = 0.668495
+
+//
+
+2) Los perfiles de concentraciones son simliares aunque los valores de estado estacionario no coinciden.
+Al cambiar Keq, de 1 a 10, se altera el equilibrio. Además, las curvas de A y R se pueden diferenciar claramente (estabamos dividiendo por A/1).
+
+//
+
+3) Todas las especies estabilizan su concentración a 2.5 mmol/L
+
+//
+
+4) Estado estacionario (Keq = 1)
+Species	Concentration (mmol/l)
+S	2000
+X1	650
+P	50
+X2	200
+
+Como forzamos el sistema a través de flujos irreversibles, no llegará al equilibrio (MAR es diferente a Keq en el estado estacionario)
+
+Reaction	Flux (mmol/s)
+R1	50	3.01107e+22
+R2	50	3.01107e+22
+R3	50	3.01107e+22
+R4	50	3.01107e+22
+R5	50	3.01107e+22
+
+A diferencia del ejercicio anterior, aquí se incluyen reacciones de entrada y salida que desplazan al sistema del equilibio.
+
+MAR = 0,238 no es igual a 64.
+
+Reaction	Flux (mmol/s)	Particle Flux (1/s)
+R1	50	3.01107e+22
+R2	50	3.01107e+22
+R3	50	3.01107e+22
+R4	50	3.01107e+22
+R5	50	3.01107e+22
+
+El sentido del flujo depende de la dirección termodinámica; su magnitud de las constantes cinéticas y de las concentraciones de los sustratos y productos.
+Cambiar Keq en este sistema (uni-uni) no altera los flujos finales, porque en el estado estacionario el sistema no acumula ni consume materia; lo que entra debe salir, atravezando todas las reacciones.

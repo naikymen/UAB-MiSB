@@ -1,0 +1,13 @@
+Problema c
+
+Pregunta i
+Como la reaccion B>C es irreversible, y A<>B es reversible, eventualmente A y B se agotan llegando al cero.
+
+Pregunta ii
+Al aumentar k1, k2 debe aumentar ya que k1/k2=Keq (una constante).
+
+Pregunta iii
+Al amuentar Keq, La reaccion de equilibrio se desplaza hacia los productos, por lo que la desaparicion de A es mas veloz.
+
+Pregunta iv
+Las velocidades cambian porque la reaccion 3 esta ligada a la concentracion de B y al removerla a velocidad diferente, su concentracion se comporta de maneras diferentes y como A est´a ligado a B, ocurre lo mismo con la concentracion de A.

@@ -1,0 +1,68 @@
+A steady state with given resolution was found.
+
+Species	Concentration (mmol/l)	Concentration Rate (mmol/(l*s))	Particle Number	Particle Number Rate (1/s)	Transition Time (s)
+S	2000	-6.9648e-15	1.20443e+24	-4.1943e+06	40
+X1	650	6.9648e-15	3.91439e+23	4.1943e+06	13
+P	50	-6.9648e-15	3.01107e+22	-4.1943e+06	1
+X2	200	6.9648e-15	1.20443e+23	4.1943e+06	4
+
+Reaction	Flux (mmol/s)	Particle Flux (1/s)
+R1	50	3.01107e+22
+R2	50	3.01107e+22
+R3	50	3.01107e+22
+R4	50	3.01107e+22
+R5	50	3.01107e+22
+
+Jacobian (complete system)
+
+Rows:    Variables of the system, including dependent species
+Columns: Variables of the system, including dependent species
+	S	X1	P	X2
+S	-0.0185185	-0	0.0555555	-0
+X1	-0	-1.5	-0	0.166667
+P	0.0185185	-0	-0.111111	0.166667
+X2	-0	0.5	0.0555555	-0.333333
+
+Eigenvalues	real	imaginary
+	-0.00439232	0
+	-0.0801805	0
+	-0.310538	0
+	-1.56785	0
+
+Jacobian (reduced system)
+
+Rows:    Independent variables of the system
+Columns: Independent variables of the system
+	S	P	X1	X2
+S	-0.0185185	-0	0.0555555	-0
+P	-0	-1.5	-0	0.166667
+X1	0.0185185	-0	-0.111111	0.166667
+X2	-0	0.5	0.0555555	-0.333333
+
+Eigenvalues	real	imaginary
+	-0.00439232	0
+	-0.0801805	0
+	-0.310538	0
+	-1.56785	0
+
+Stability Analysis of the Reduced System
+
+KINETIC STABILITY ANALYSIS
+The linear stability analysis based on the eigenvalues
+of the Jacobian matrix is only valid for steady states.
+
+Summary:
+This state is asymptotically stable.
+
+Eigenvalue statistics:
+ Largest real part: -0.00439232
+ Largest absolute imaginary part:  0
+ 4 are purely real
+ 0 are purely imaginary
+ 0 are complex
+ 0 are equal to zero
+ 0 have positive real part
+ 4 have negative real part
+ stiffness = 356.953
+ time hierarchy = 0.910766
+

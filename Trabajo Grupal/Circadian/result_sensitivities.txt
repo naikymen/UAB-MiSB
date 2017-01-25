@@ -1,0 +1,57 @@
+Sensitivities Result:
+
+Sensitivities array
+
+Rows: Variables 1, All Parameter Values
+Values[vs].InitialValue	-0.0996838
+Values[K_I].InitialValue	11.7084
+Values[vm].InitialValue	-12.4174
+Values[Km].InitialValue	-0.173351
+Values[ks].InitialValue	-21.5254
+Values[K1].InitialValue	2.61025
+Values[V1].InitialValue	-3.34828
+Values[K2].InitialValue	-1.06024
+Values[V2].InitialValue	2.04104
+Values[K3].InitialValue	2.4749
+Values[V3].InitialValue	-1.58928
+Values[K4].InitialValue	-1.03204
+Values[V4].InitialValue	1.18052
+Values[k1].InitialValue	-4.50053
+Values[k2].InitialValue	5.28677
+Values[vd].InitialValue	7.09097
+Values[Kd].InitialValue	-18.8825
+Values[n].InitialValue	-0.2642
+Values[periodMaxTime].InitialValue	0
+Values[periodSumN].InitialValue	-2.36973e+13
+Values[period1stMaxTime].InitialValue	nan
+Values[tau].InitialValue	0
+Values[periodMaxValue].InitialValue	0
+
+Scaled sensitivities array
+
+Rows: Variables 1, All Parameter Values
+Values[vs].InitialValue	-0.00319698
+Values[K_I].InitialValue	0.49408
+Values[vm].InitialValue	-0.340602
+Values[Km].InitialValue	-0.00365762
+Values[ks].InitialValue	-0.345173
+Values[K1].InitialValue	0.220299
+Values[V1].InitialValue	-0.45214
+Values[K2].InitialValue	-0.089482
+Values[V2].InitialValue	0.136085
+Values[K3].InitialValue	0.208876
+Values[V3].InitialValue	-0.33533
+Values[K4].InitialValue	-0.0871015
+Values[V4].InitialValue	0.124542
+Values[k1].InitialValue	-0.360843
+Values[k2].InitialValue	0.290025
+Values[vd].InitialValue	0.28427
+Values[Kd].InitialValue	-0.159364
+Values[n].InitialValue	-0.0445959
+Values[periodMaxTime].InitialValue	0
+Values[periodSumN].InitialValue	-0
+Values[period1stMaxTime].InitialValue	nan
+Values[tau].InitialValue	0
+Values[periodMaxValue].InitialValue	0
+
+

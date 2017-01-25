@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE math PUBLIC "-//W3C//DTD MathML 2.0//EN" "http://www.w3.org/Math/DTD/mathml2/mathml2.dtd">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<msup>
+<mfenced>
+<mfrac>
+<mrow>
+<mi>tau</mi>
+<mo>-</mo>
+<mn>24.2</mn>
+</mrow>
+<mn>24.2</mn>
+</mfrac>
+</mfenced>
+<mrow>
+<mn>2</mn>
+</mrow>
+</msup>
+</math>

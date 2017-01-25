@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0058)https://octave.sourceforge.io/control/function/kalman.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="date" content="30-Oct-2015">
+  <meta name="author" content="The Octave-Forge Community">
+  <meta name="description" content="Octave-Forge is a collection of packages   providing extra functionality for GNU Octave.">
+  <meta name="keywords" lang="en" content="Octave-Forge, Octave, extra packages">
+  <title>Function Reference: kalman</title>
+  <link rel="stylesheet" type="text/css" href="./Function Reference_ kalman_files/octave-forge.css">
+  <script src="./Function Reference_ kalman_files/fixed.js" type="text/javascript"></script>
+  <script src="./Function Reference_ kalman_files/javascript.js" type="text/javascript"></script>
+  <link rel="shortcut icon" href="https://octave.sourceforge.io/favicon.ico">
+  </head>
+  <body onload="javascript:fix_top_menu (); javascript:show_left_menu ();">
+  <div id="top-menu" class="menu" style="position: fixed;">
+   <table class="menu">
+      <tbody><tr>
+        <td style="width: 90px;" class="menu" rowspan="2">
+          <a name="top">
+          <img src="./Function Reference_ kalman_files/oct.png" alt="Octave logo">
+          </a>
+        </td>
+        <td class="menu" style="padding-top: 0.9em;">
+          <big class="menu">Octave-Forge</big><small class="menu"> - Extra packages for GNU Octave</small>
+        </td>
+      </tr>
+      <tr>
+        <td class="menu">
+
+ <a href="https://octave.sourceforge.io/index.html" class="menu">Home</a> ·
+ <a href="https://octave.sourceforge.io/packages.php" class="menu">Packages</a> ·
+ <a href="https://octave.sourceforge.io/developers.html" class="menu">Developers</a> ·
+ <a href="https://octave.sourceforge.io/docs.html" class="menu">Documentation</a> ·
+ <a href="https://octave.sourceforge.io/FAQ.html" class="menu">FAQ</a> ·
+ <a href="https://octave.sourceforge.io/bugs.html" class="menu">Bugs</a> ·
+ <a href="https://octave.sourceforge.io/archive.html" class="menu">Mailing Lists</a> ·
+ <a href="https://octave.sourceforge.io/links.html" class="menu">Links</a> ·
+ <a href="https://octave.sourceforge.io/code.html" class="menu">Code</a>
+
+        </td>
+      </tr>
+    </tbody></table>
+  </div>
+<div id="left-menu" style="display: block;">
+  <h3>Navigation</h3>
+  <p class="left-menu"><a class="left-menu-link" href="https://octave.sourceforge.io/operators.html">Operators and Keywords</a></p>
+  <p class="left-menu"><a class="left-menu-link" href="https://octave.sourceforge.io/function_list.html">Function List:</a></p>
+  <ul class="left-menu-list">
+    <li class="left-menu-list">
+      <a class="left-menu-link" href="https://octave.sourceforge.io/octave/overview.html">» Octave core</a>
+    </li>
+    <li class="left-menu-list">
+      <a class="left-menu-link" href="https://octave.sourceforge.io/functions_by_package.php">» by package</a>
+    </li>
+    <li class="left-menu-list">
+      <a class="left-menu-link" href="https://octave.sourceforge.io/functions_by_alpha.php">» alphabetical</a>
+    </li>
+  </ul>
+  <p class="left-menu"><a class="left-menu-link" href="https://octave.sourceforge.io/doxygen/html">C++ API</a></p>
+</div>
+<div id="doccontent">
+
+<dl>
+<dt class="deftypefn">Function File: [<var>est</var>, <var>g</var>, <var>x</var>] = <b>kalman</b> (<var>sys, q, r</var>)<var><a name="index-kalman-1"></a></var></dt>
+<dt class="deftypefn">Function File: [<var>est</var>, <var>g</var>, <var>x</var>] = <b>kalman</b> (<var>sys, q, r, s</var>)<var><a name="index-kalman-2"></a></var></dt>
+<dt class="deftypefn">Function File: [<var>est</var>, <var>g</var>, <var>x</var>] = <b>kalman</b> (<var>sys, q, r, [], sensors, known</var>)<var><a name="index-kalman-3"></a></var></dt>
+<dt class="deftypefn">Function File: [<var>est</var>, <var>g</var>, <var>x</var>] = <b>kalman</b> (<var>sys, q, r, s, sensors, known</var>)<var><a name="index-kalman-4"></a></var></dt>
+<dd><p>Design Kalman estimator for <acronym>LTI</acronym> systems.
+
+        </p><p><strong>Inputs</strong>
+          </p><dl>
+<dt><var>sys</var></dt><dd>Nominal plant model. 
+<br></dd><dt><var>q</var></dt><dd>Covariance of white process noise. 
+<br></dd><dt><var>r</var></dt><dd>Covariance of white measurement noise. 
+<br></dd><dt><var>s</var></dt><dd>Optional cross term covariance.  Default value is 0. 
+<br></dd><dt><var>sensors</var></dt><dd>Indices of measured output signals y from <var>sys</var>.  If omitted, all outputs are measured. 
+<br></dd><dt><var>known</var></dt><dd>Indices of known input signals u (deterministic) to <var>sys</var>.  All other inputs to <var>sys</var>
+are assumed stochastic.  If argument <var>known</var> is omitted, no inputs u are known. 
+</dd></dl>
+
+        <p><strong>Outputs</strong>
+          </p><dl>
+<dt><var>est</var></dt><dd>State-space model of the Kalman estimator. 
+<br></dd><dt><var>g</var></dt><dd>Estimator gain. 
+<br></dd><dt><var>x</var></dt><dd>Solution of the Riccati equation. 
+</dd></dl>
+
+        <p><strong>Block Diagram</strong>
+     </p><pre class="example">                                           u  +-------+         ^
+                +----------------------------&gt;|      |-------&gt; y
+                |   +-------+     +       y  | est  |        ^
+          u ----+---&gt;|      |-----&gt;(+)------&gt;|      |-------&gt; x
+                     | sys  |      ^ +      +-------+
+          w --------&gt;|      |      |
+                     +-------+       |v
+          
+          Q = cov (w, w')     R = cov (v, v')     S = cov (w, v')
+</pre>
+        <p class="noindent"><strong>See also:</strong> care, dare, estim, lqr.
+</p></dd></dl>
+<p>Package: <a href="https://octave.sourceforge.io/control/index.html">control</a></p>
+<div id="sf_logo">
+           <a href="https://sourceforge.net/">           <img src="./Function Reference_ kalman_files/sflogo.php" width="88" height="31" style="border: 0;" alt="SourceForge.net Logo">           </a>
+         </div>
+</div>
+
+
+</body></html>

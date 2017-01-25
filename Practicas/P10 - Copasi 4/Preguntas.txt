@@ -1,0 +1,20 @@
+3a	En el grafico de fase hay curvas. El sistema tiende a un estado de oscilación "atractor", sin importar la condición inicial.
+3b	Los valores más frecuentes son los menores, con un pequeño pico en los valores mayores. Para cada momento, solo 1 de 3 proteínas o mRNA es mayoritario.
+3c	Los valores no representan un estado estacionario real, ya que los flujos del sistema nunca se estabilizan, sino que tienden a oscilar.
+3d	4 de 6 autovalores tienen valores negativos, el estado no es estable.
+
+4a	El sistema se estabiliza, las concentraciones tienden a un valor estable.
+4b	La trayectoria tiende a un punto, donde las concentraciones permanecen estables.
+4c	cerca de 50 para mRNA y 5000 para proteínas
+4d	Estos valores coinciden
+4e	Los autovalores del jacobiano son todos negativos, y el sistema tiende a un estado estacionario, pero se informa que tiene componentes oscilatorios
+
+5a	En este caso las oscilaciones reaparecen, aunque n = 0.5, pero no son claras. El diagrama de fases tiende al mismo punto anterior, pero no se termina de estabilizar (por el "ruido" de la simulación estocástica). Parecería que LacI está en promedio en menores concentraciones, tanto mRNA como proteína, respecto de los otros dos.
+5b	El resultado es cada vez diferente.
+
+6b	Los valores de los graficos son ~50 para mRNA y ~5000 para proteínas, cercanos a los del apartado 4c.
+
+7a	Las oscilaciones se superponen mucho menos que en el punto anterior, y están más claramente definidas. A la larga, las simulaciones estocásticas parece mostrar cierta coherencia de fase, que podría ser representada por el resultado de la simulación determinista.
+7b	Una vez más, el sistema no se estabiliza y oscila.
+
+8	En resumen, la simulación determinista de un sistema oscilatorio da patrones claros y repetibles de oscilación. Mientras, una simulación estocástica de un sistema que tiende a la estabilidad (y no oscila en un modelo determinista) es desplazado de el equilibrio por el "ruido" del modelo y muestra pequeñas oscilaciones. Para el sistema oscilatorio con simulación estocástica, las oscilaciones se desdibujan un poco por el ruido, pero en promedio conservan el perfil oscilatorio del modelo determinista.
